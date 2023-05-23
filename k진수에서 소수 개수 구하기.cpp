@@ -21,11 +21,11 @@ bool check(long long n)   //에라토스테네스의 체 (소수 찾기)
 }
 int solution(int n, int k) {
     string num;
-    while (n > 0) {   //10진수 n진수로 만들기
+    while (n > 0) {   //10진수 ㅏ진수로 만들기
         num += to_string(n % k);  
         n /= k;
     }
-    reverse(num.begin(), num.end());   // num 안의 값 reverse로 변환  num 안엔 n진수로 변환된 값이 들어있다. ex) 11010110
+    reverse(num.begin(), num.end());   // num 안의 값 reverse로 변환  num 안엔 ㅏ진수로 변환된 값이 들어있다. ex) 11010110
     
     int answer = 0;
     string str = "";
